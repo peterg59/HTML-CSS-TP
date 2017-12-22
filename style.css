@@ -1,0 +1,191 @@
+#titre{
+	animation: Test 1s infinite;
+}
+
+#menu:hover{
+	background-color: blue;
+}
+
+@keyframes Test{
+	0%{opacity: 1;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+header {
+	color: red;
+}
+
+#bowling{
+	position: relative;
+	-webkit-animation: bowling 5s infinite linear; /* Safari 4.0 - 8.0 */
+    animation: bowling 5s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes bowling {
+    0%{
+	    left:0px; 
+	    top:0px;
+	    transform: rotate(0deg);
+    }
+    
+    100% {
+	    left:1000px; 
+	    top:0px;
+	    transform: rotate(360deg);
+    }
+}
+
+#deathstar
+{
+	position: relative;
+	-webkit-animation: death 3s infinite linear; /* Safari 4.0 - 8.0 */
+    animation: death 3s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes death {
+    0%   {
+    left:0px; 
+    top:0px;
+    -webkit-transform : rotate(0deg);
+    }
+    25%  {
+    left:500px; 
+    top:0px;
+    }
+    50%  {
+    left:500px; 
+    top:500px;
+    }
+    75%  {
+    left:0px; 
+    top:500px;
+    }
+    100% {
+    left:0px; 
+    top:0px;
+    -webkit-transform : rotate(360deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes death {
+    0%   {
+	    left:0px; 
+	    top:0px;
+	    transform : rotate(0deg);
+    }
+    25%  {
+	    left:500px; 
+	    top:0px;
+    }
+    50%  {
+	    left:500px; 
+	    top:500px;
+    }
+    75%  {
+	    left:0px; 
+	    top:500px;
+    }
+    100% {
+	    left:0px; 
+	    top:0px;
+	    transform : rotate(360deg);
+    }
+}
+
+svg{
+	position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation: example 3s infinite
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+footer {
+	color : blue;
+}	
+
+.clignote{
+	text-decoration: blink;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    border: 1px solid black;
+    color : black;
+}
+
+tr:hover{
+	font-size:18px;
+}
+
+.ligneimpair{
+	background-color:pink;
+}
+
+.lignepair{
+	background-color:red;
+}
+
+.titre:before {
+	content: '\0000a9';
+}
+
+#journal{
+	background-color:silver;
+}
+
+#web{
+	background-color:#00ffff;
+}
+
+#tv{
+	background-color:yellow;
+}
+
+#journal:hover{
+	font-size:36px;
+}
+
+#web:hover{
+	font-size:36px;
+}
+
+#tv:hover{
+	font-size:36px;
+}
+
+input:focus { 
+    background-color: #00ffff;
+}
+
+[required] {
+   border: 2px dotted orange;
+}
+	

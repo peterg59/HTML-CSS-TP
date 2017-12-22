@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adherent</title>
+</head>
+<body>
+	<header>
+		<svg height=200 width="1000">
+		 <circle cx="100" cy="100" r="80" fill="blue">
+		  <animate dur="3s" attributeName="r" values="100; 20; 100" repeatCount="indefinite" />
+			</circle>	
+		<circle cx="200" cy="100" r="80" fill="violet">
+		<animate dur="4s" attributeName="r" values="100; 20; 100" repeatCount="indefinite" />
+		</circle>
+		<circle cx="300" cy="100" r="80" fill="red">
+		<animate dur="3s" attributeName="r" values="100; 20; 100" repeatCount="indefinite" />
+		</circle>
+		<circle cx="400" cy="100" r="80" fill="green">
+		<animate dur="4s" attributeName="r" values="100; 20; 100" repeatCount="indefinite" />
+		</circle>
+		</svg>
+		<h1>Most important heading here</h1>
+		<h3>Less important heading here</h3>
+		<p>Some additional information here</p>
+	</header>
+
+	<form action="#" method="POST">
+	<table>
+	<tr>
+		<td>Nom:</td>
+		<td><input type="text" name="nom"><br></td>
+	</tr>
+	<tr>
+		<td>Date de naissance:</td>
+		<td><input type="date" name="dateNaissance"><br></td>
+	</tr>
+	<tr>
+		<td>Age:</td>
+		<td><input type="text" name="age"><br></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><input type="text" name="prenom"><br></td>
+	</tr>
+	<tr>
+		<td>CP:</td>
+		<td><input type="text" name="CP"><br></td>
+	</tr>
+	<tr>
+		<td>Ville:</td>
+		<td><input type="text" name="ville"><br></td>
+	</tr>
+	<tr>
+		<td>Sexe:</td>
+		<td><input type="radio" name="homme" id = "sexeM">Homme<br></td>
+		<td><input type="radio" name="homme" id = "sexeF">Femme<br></td> 
+	</tr>
+	<tr>
+		<td>A jour cotisation:</td>
+		<td><input type="checkbox" name="cotisation"><br></td>
+	</tr>
+	</table>
+		<input type="submit" value="Submit">
+	</form>
+	
+	<aside>
+		<h2>Liste des articles lus par l'adhérent</h2>
+		<ul>
+			<li>Chat</li>
+			<li>Chien</li>
+			<li>Rat</li>
+			<li>Loin</li>
+		</ul>
+	</aside>
+
+
+	<footer>
+		<p>Posted by: Hege Refsnes</p>
+		<p>
+			Contact information: <a href="mailto:someone@example.com">
+				someone@example.com</a>.
+		</p>
+	</footer>
+</body>
+</html>

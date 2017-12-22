@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.my-item {
+	display: none;
+}
+
+.my-item.first {
+	display: block;
+}
+
+@media screen and (min-width: 640px) {
+	.my-item {
+		display: block;
+	}
+}
+</style>
+</head>
+<body>
+
+	<section>
+		<article class="my-item first">
+			<h1>Hello</h1>
+			<p>Bonjour tout le monde</p>
+		</article>
+		<article class="my-item">
+			<h1>Bye</h1>
+			<p>Au revoir tout le monde</p>
+		</article>
+	</section>
+
+</body>
+</html>

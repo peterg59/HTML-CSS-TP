@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+	<header>
+		<svg height=200 width="500">
+		  <circle cx="100" cy="100" r="80" fill="red" />
+		  <animate dur="3s" attributeName="r" values="100; 20; 100"
+				repeatCount="indefinite" />
+		
+			<circle cx="200" cy="100" r="80">
+		<animate dur="3s" attributeName="r" values="100; 20; 100"
+				repeatCount="indefinite" />
+		</circle>
+		</svg>
+		<h1>Most important heading here</h1>
+		<h3>Less important heading here</h3>
+		<p>Some additional information here</p>
+	</header>
+	
+	<h1>Voici mon formulaire</h1>
+	
+	<form action="#" method="POST">
+		<label>Titre</label>
+		<input type="text" name="titre" required = "required"><br>
+		<label>Auteur</label>
+		<input type="text" name="auteur"><br> 
+		
+		<label>Catégorie</label> 
+		<select>
+			<option value="journal">Journal</option>
+			<option value="web">Web</option>
+			<option value="tv">TV</option>
+		</select>
+		<button type = "submit">Submit</button>
+	</form>
+	
+	<h1>Voici mon tableau</h1>
+	
+	<table>
+		<tr>
+			<th>Titre</th>
+			<th>Catégorie</th>
+			<th>Auteur</th>
+		</tr>
+		
+		<tr class = "ligneimpair" >
+			<td class = "titre">Rouge</td>
+			<td id = "journal">Journal</td>
+			<td>Auteur</td>
+		</tr>
+		
+		<tr class = "lignepair">
+			<td>Bleu</td>
+			<td id = "web">Web</td>
+			<td>Auteur</td>
+		</tr>
+		
+		<tr class = "ligneimpair">
+			<td>Jaune</td>
+			<td id = "tv">TV</td>
+			<td>Auteur</td>
+		</tr>
+	</table>
+
+	<footer>
+		<p>Posted by: Hege Refsnes</p>
+		<p>
+			Contact information: <a href="mailto:someone@example.com">
+				someone@example.com</a>.
+		</p>
+	</footer>
+</body>
+</html>
