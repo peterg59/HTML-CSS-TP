@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
+
 <body>
 
-	<header>
-		<svg height=200 width="500">
+	<!-- <header>
+		<!--<svg height=200 width="500">
 		  <circle cx="100" cy="100" r="80" fill="red" />
 		  <animate dur="3s" attributeName="r" values="100; 20; 100"
 				repeatCount="indefinite" />
@@ -18,52 +22,68 @@
 				repeatCount="indefinite" />
 		</circle>
 		</svg>
-		<h1>Most important heading here</h1>
-		<h3>Less important heading here</h3>
-		<p>Some additional information here</p>
-	</header>
+	</header>-->
 	
-	<h1>Voici mon formulaire</h1>
-	
-	<form action="#" method="POST">
-		<label>Titre</label>
-		<input type="text" name="titre" required = "required"><br>
-		<label>Auteur</label>
-		<input type="text" name="auteur"><br> 
-		
-		<label>Catégorie</label> 
+	<div class="col-xs-6 col-md-2">
+		<h1>Voici mon formulaire</h1>
+
+		<form>
+			<div class="form-group">
+				<label for="titre">Titre</label> 
+				<input type="text" class="form-control" id="titre" placeholder="Titre">
+			</div>
+			<div class="form-group">
+				<label for="auteur">Author</label> 
+				<input type="text" class="form-control" id="auteur" placeholder="Auteur">
+			</div>
+			<div class="form-group">
+			<label for="categorie">Categorie</label> 
+			<select id = "categorie">
+		        <option>Journal</option>
+		        <option>Web</option>
+		        <option>TV</option>
+		     </select>
+      		</div>
+			<button type="submit" class="btn btn-default">Search</button>
+		</form>
+	</div>
+
+	<!-- <form action="#" method="POST">
+		<label>Titre</label> <input type="text" name="titre"
+			required="required"><br> <label>Auteur</label> <input
+			type="text" name="auteur"><br> <label>Catégorie</label>
 		<select>
 			<option value="journal">Journal</option>
 			<option value="web">Web</option>
 			<option value="tv">TV</option>
 		</select>
-		<button type = "submit">Submit</button>
-	</form>
-	
+		<button type="submit">Submit</button>
+	</form> -->
+
 	<h1>Voici mon tableau</h1>
 	
-	<table>
-		<tr>
+	<table class="table table-bordered">
+		<tr class = "col-md-2">
 			<th>Titre</th>
 			<th>Catégorie</th>
 			<th>Auteur</th>
 		</tr>
-		
-		<tr class = "ligneimpair" >
-			<td class = "titre">Rouge</td>
-			<td id = "journal">Journal</td>
+
+		<tr class="success col-md-2">
+			<td>Rouge</td>
+			<td><span class="glyphicon glyphicon-music"></span></td>
 			<td>Auteur</td>
 		</tr>
-		
-		<tr class = "lignepair">
+
+		<tr class="danger col-md-2">
 			<td>Bleu</td>
-			<td id = "web">Web</td>
+			<td><span class="glyphicon glyphicon-film"></span></td>
 			<td>Auteur</td>
 		</tr>
-		
-		<tr class = "ligneimpair">
+
+		<tr class="info col-md-2">
 			<td>Jaune</td>
-			<td id = "tv">TV</td>
+			<td><span class="glyphicon glyphicon-off"></span></td>
 			<td>Auteur</td>
 		</tr>
 	</table>
