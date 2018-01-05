@@ -134,6 +134,19 @@ function validateForm() {
     var livre = creerLivre(title, document.getElementById("myCheck").checked);
 }
 
+function surlignerElement(){
+	var title = document.forms["myform"]["title"].value;
+	if (title == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	for(var i in biblio){
+		 if(i.titre.includes(title)){
+			 
+		 }
+	 }
+}
+
 function createLi(ul, text, emprunt){
 	var li = document.createElement("li");
 	if(emprunt == true){
