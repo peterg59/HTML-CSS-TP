@@ -5,7 +5,28 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<canvas id="mon_canvas" width="800" height="500">
+            Message pour les navigateurs ne supportant pas encore canvas.
+    </canvas>
 
-<script src="script.js"></script>
+	<p id="nbElemTotal"></p>
+
+	<ul id="mylist">
+	</ul>
+
+	<form name = "myform" onsubmit="event.preventDefault(); validateForm()">
+		Title:<br> 
+		<input type="text" name="title"> 
+		<br>
+		Emprunt: <input id="myCheck" type="checkbox">
+			<br>
+		<input type="submit" value="Submit">
+	</form>
+	<script src="underscore.js"></script>
+	<script src="script.js"></script>
+	<script>
+		dessine2();
+		ajouterElement();
+	</script>
 </body>
 </html>
